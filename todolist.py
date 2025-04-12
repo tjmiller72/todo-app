@@ -82,17 +82,22 @@ def main():
         choice = input("Choose an option (1-4): ")
 
         if choice == "1":
+	    print(":0 I farted")
             task = input("Enter the task: ")
             todo.add_task(task)
         elif choice == "2":
+	    print("Oh no! I farted")
             task = input("Enter the task to delete: ")
             todo.delete_task(task)
         elif choice == "3":
+	    print("Haha xD I farted")
             todo.show_tasks()
         elif choice == "4":
+	    print("Whoops I farted")
             print("Exiting the application.")
             break
         else:
+	    print("No fart for you")
             print("Invalid choice. Please try again.")
 
 
