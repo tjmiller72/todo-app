@@ -90,6 +90,10 @@ def main():
         elif choice == "3":
             todo.show_tasks()
         elif choice == "4":
+            if todo.tasks:
+                with open('tasklist.txt','w') as f:
+                    for task in todo.tasks:
+                        f.write(f'{task}\n')
             print("Exiting the application.")
             break
         else:
